@@ -2,7 +2,7 @@
 
 # URL
 
-URL is a GUI tool on macOS.
+URL can help you quickly convert URL encode(decode), uppercase and lowercase, md5, sha256, Base64 encode(decode), Unicode encode(decode), Hex encode(decode) on macOS.
 
 [![Swift](https://img.shields.io/badge/swift-5.2-orange.svg)](https://swift.org/)
 [![platform](https://img.shields.io/badge/platform-macOS-green.svg)](https://github.com/MobSF/Mobile-Security-Framework-MobSF/)
