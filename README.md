@@ -1,6 +1,9 @@
-![](https://github.com/paradiseduo/URL/blob/master/img/icon.png)
-
-# URL
+<h1 align="center">
+  <img src="https://github.com/paradiseduo/URL/blob/master/img/icon.png" alt="URL" width="256">
+  <br>
+  URL
+  <br>
+</h1>
 
 URL can help you quickly convert URL encode(decode), uppercase and lowercase, md5, sha256, Base64 encode(decode), Unicode encode(decode), Hex encode(decode) on macOS.
 
