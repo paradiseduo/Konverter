@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="URL" id="1Xt-HY-uBw">
+                            <menuItem title="Konverter" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="URL" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Konverter" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About URL" id="5kV-Vb-QxS">
+                                        <menuItem title="About Konverter" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -30,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide URL" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Konverter" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -48,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit URL" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Konverter" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -661,7 +660,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="URL Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Konverter Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -685,7 +684,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="URL" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Konverter" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -714,7 +713,7 @@
                                 <rect key="frame" x="20" y="174" width="556" height="237"/>
                                 <clipView key="contentView" drawsBackground="NO" id="izE-m1-if1">
                                     <rect key="frame" x="1" y="1" width="539" height="235"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" id="TdF-4L-jGT">
                                             <rect key="frame" x="0.0" y="0.0" width="539" height="235"/>
@@ -748,7 +747,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="URLDecode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="47v-iG-wtK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="decode:" target="XfG-lQ-9wD" id="Tf4-v4-130"/>
@@ -762,7 +761,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="Base64En" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WsR-Af-ZYS">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="base64Encode:" target="XfG-lQ-9wD" id="dCD-00-M6y"/>
@@ -776,7 +775,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="MD5" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s0n-jZ-T9g">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="md5:" target="XfG-lQ-9wD" id="P7z-hi-CpX"/>
@@ -790,7 +789,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="SHA256" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pPY-uu-Nro">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="sha256:" target="XfG-lQ-9wD" id="yLZ-gD-e7L"/>
@@ -804,7 +803,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="Base64De" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="syT-YA-NAn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="Base64Decode:" target="XfG-lQ-9wD" id="lwG-QP-KCT"/>
@@ -817,7 +816,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="URLEncode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0rW-dE-yN5">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="encode:" target="XfG-lQ-9wD" id="FVc-Fw-8Ky"/>
@@ -831,7 +830,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="Uppercased" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="82v-Uy-9hQ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="uppercaseString:" target="XfG-lQ-9wD" id="mS1-Fz-a9G"/>
@@ -845,7 +844,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="Lowercased" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yQI-hM-UmN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="lowercaseString:" target="XfG-lQ-9wD" id="CKe-Mh-W0Q"/>
@@ -859,7 +858,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="UnicodeEnc" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="inA-GV-0DI">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="unicodeEncode:" target="XfG-lQ-9wD" id="kJI-he-yV1"/>
@@ -873,7 +872,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="UnicodeDec" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b2g-Xg-9fe">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="unicodeDecode:" target="XfG-lQ-9wD" id="nNB-IT-owS"/>
@@ -887,7 +886,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="HexEncode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VZs-Ml-DGD">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="hexEncode:" target="XfG-lQ-9wD" id="SQo-BW-IaK"/>
@@ -901,7 +900,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="HexDecode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M1S-0Z-v9O">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="titleBar"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="hexDecode:" target="XfG-lQ-9wD" id="c4P-Db-qR7"/>

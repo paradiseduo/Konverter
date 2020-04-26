@@ -27,14 +27,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E894D7A4212BBE9000ABF77E /* URL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E894D7A4212BBE9000ABF77E /* Konverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E894D7A7212BBE9000ABF77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E894D7A9212BBE9000ABF77E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E894D7AB212BBE9200ABF77E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E894D7AE212BBE9200ABF77E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E894D7B0212BBE9200ABF77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E894D7B1212BBE9200ABF77E /* URL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = URL.entitlements; sourceTree = "<group>"; };
-		E89F7F2C212E59F30008CD71 /* URL-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "URL-Bridging-Header.h"; sourceTree = "<group>"; };
+		E894D7B1212BBE9200ABF77E /* Konverter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Konverter.entitlements; sourceTree = "<group>"; };
+		E89F7F2C212E59F30008CD71 /* Konverter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Konverter-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 		E894D79B212BBE9000ABF77E = {
 			isa = PBXGroup;
 			children = (
-				E894D7A6212BBE9000ABF77E /* URL */,
+				E894D7A6212BBE9000ABF77E /* Konverter */,
 				E894D7A5212BBE9000ABF77E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,12 +59,12 @@
 		E894D7A5212BBE9000ABF77E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E894D7A4212BBE9000ABF77E /* URL.app */,
+				E894D7A4212BBE9000ABF77E /* Konverter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E894D7A6212BBE9000ABF77E /* URL */ = {
+		E894D7A6212BBE9000ABF77E /* Konverter */ = {
 			isa = PBXGroup;
 			children = (
 				E894D7A7212BBE9000ABF77E /* AppDelegate.swift */,
@@ -72,18 +72,18 @@
 				E894D7AB212BBE9200ABF77E /* Assets.xcassets */,
 				E894D7AD212BBE9200ABF77E /* Main.storyboard */,
 				E894D7B0212BBE9200ABF77E /* Info.plist */,
-				E894D7B1212BBE9200ABF77E /* URL.entitlements */,
-				E89F7F2C212E59F30008CD71 /* URL-Bridging-Header.h */,
+				E894D7B1212BBE9200ABF77E /* Konverter.entitlements */,
+				E89F7F2C212E59F30008CD71 /* Konverter-Bridging-Header.h */,
 			);
-			path = URL;
+			path = Konverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E894D7A3212BBE9000ABF77E /* URL */ = {
+		E894D7A3212BBE9000ABF77E /* Konverter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E894D7B4212BBE9200ABF77E /* Build configuration list for PBXNativeTarget "URL" */;
+			buildConfigurationList = E894D7B4212BBE9200ABF77E /* Build configuration list for PBXNativeTarget "Konverter" */;
 			buildPhases = (
 				E894D7A0212BBE9000ABF77E /* Sources */,
 				E894D7A1212BBE9000ABF77E /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = URL;
+			name = Konverter;
 			productName = URL;
-			productReference = E894D7A4212BBE9000ABF77E /* URL.app */;
+			productReference = E894D7A4212BBE9000ABF77E /* Konverter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E894D79F212BBE9000ABF77E /* Build configuration list for PBXProject "URL" */;
+			buildConfigurationList = E894D79F212BBE9000ABF77E /* Build configuration list for PBXProject "Konverter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -128,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E894D7A3212BBE9000ABF77E /* URL */,
+				E894D7A3212BBE9000ABF77E /* Konverter */,
 			);
 		};
 /* End PBXProject section */
@@ -287,25 +287,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = URL/URL.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Konverter/Konverter.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = HRTKN7NJBD;
-				INFOPLIST_FILE = URL/Info.plist;
+				DEVELOPMENT_TEAM = XP8R7F7ZRC;
+				INFOPLIST_FILE = Konverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/URL",
+					"$(PROJECT_DIR)/Konverter",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = MacOS.URL;
+				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Konverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "URL/URL-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Konverter/Konverter-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -316,25 +316,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = URL/URL.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Konverter/Konverter.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 5;
-				DEVELOPMENT_TEAM = HRTKN7NJBD;
-				INFOPLIST_FILE = URL/Info.plist;
+				DEVELOPMENT_TEAM = XP8R7F7ZRC;
+				INFOPLIST_FILE = Konverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/URL",
+					"$(PROJECT_DIR)/Konverter",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = MacOS.URL;
+				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Konverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "URL/URL-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Konverter/Konverter-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -342,7 +342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E894D79F212BBE9000ABF77E /* Build configuration list for PBXProject "URL" */ = {
+		E894D79F212BBE9000ABF77E /* Build configuration list for PBXProject "Konverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E894D7B2212BBE9200ABF77E /* Debug */,
@@ -351,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E894D7B4212BBE9200ABF77E /* Build configuration list for PBXNativeTarget "URL" */ = {
+		E894D7B4212BBE9200ABF77E /* Build configuration list for PBXNativeTarget "Konverter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E894D7B5212BBE9200ABF77E /* Debug */,

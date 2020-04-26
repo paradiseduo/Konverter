@@ -1,11 +1,11 @@
 <h1 align="center">
-  <img src="https://github.com/paradiseduo/URL/blob/master/img/icon.png" alt="URL" width="256">
+  <img src="https://github.com/paradiseduo/Konverter/blob/master/img/icon.png" alt="Konverter" width="256">
   <br>
   URL
   <br>
 </h1>
 
-URL can help you quickly convert URL encode(decode), uppercase and lowercase, md5, sha256, Base64 encode(decode), Unicode encode(decode), Hex encode(decode) on macOS.
+Konverter can help you quickly convert URL encode(decode), uppercase and lowercase, md5, sha256, Base64 encode(decode), Unicode encode(decode), Hex encode(decode) on macOS.
 
 [![Swift](https://img.shields.io/badge/swift-5.2-orange.svg)](https://swift.org/)
 [![platform](https://img.shields.io/badge/platform-macOS-green.svg)](https://github.com/MobSF/Mobile-Security-Framework-MobSF/)
@@ -20,20 +20,20 @@ v1.0
 
 
 ## Install
-download [here](https://github.com/paradiseduo/URL/releases)
+download [here](https://github.com/paradiseduo/Konverter/releases)
 
-and unzip file, Drag URL.app to Applications file
+and unzip file, Drag Konverter.app to Applications file
 
 ## Uninstall
-drop URL.app to Trash
+drop Konverter.app to Trash
 
 then open Terminal.app and input those commands:
 ```bash
-rm -rf ~/Library/Preferences/MacOS.URL.plist
-rm -rf ~/Library/Caches/MacOS.URL
+rm -rf ~/Library/Preferences/MacOS.Konverter.plist
+rm -rf ~/Library/Caches/MacOS.Konverter
 ```
 
 ## Screenshots
 
 ### MainView
-![](https://github.com/paradiseduo/URL/blob/master/img/main.jpg)
+![](https://github.com/paradiseduo/Konverter/blob/master/img/main.jpg)
