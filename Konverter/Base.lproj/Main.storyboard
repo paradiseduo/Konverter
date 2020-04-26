@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -674,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="URL" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Konverter" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -704,7 +705,7 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="URL" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Konverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="596" height="431"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -713,7 +714,7 @@
                                 <rect key="frame" x="20" y="174" width="556" height="237"/>
                                 <clipView key="contentView" drawsBackground="NO" id="izE-m1-if1">
                                     <rect key="frame" x="1" y="1" width="539" height="235"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" id="TdF-4L-jGT">
                                             <rect key="frame" x="0.0" y="0.0" width="539" height="235"/>
@@ -747,7 +748,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="URLDecode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="47v-iG-wtK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="decode:" target="XfG-lQ-9wD" id="Tf4-v4-130"/>
@@ -761,7 +762,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="Base64En" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WsR-Af-ZYS">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="base64Encode:" target="XfG-lQ-9wD" id="dCD-00-M6y"/>
@@ -775,7 +776,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="MD5" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="s0n-jZ-T9g">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="md5:" target="XfG-lQ-9wD" id="P7z-hi-CpX"/>
@@ -789,7 +790,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="SHA256" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pPY-uu-Nro">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="sha256:" target="XfG-lQ-9wD" id="yLZ-gD-e7L"/>
@@ -803,7 +804,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="Base64De" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="syT-YA-NAn">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="Base64Decode:" target="XfG-lQ-9wD" id="lwG-QP-KCT"/>
@@ -816,7 +817,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="URLEncode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0rW-dE-yN5">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="encode:" target="XfG-lQ-9wD" id="FVc-Fw-8Ky"/>
@@ -830,7 +831,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="Uppercased" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="82v-Uy-9hQ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="uppercaseString:" target="XfG-lQ-9wD" id="mS1-Fz-a9G"/>
@@ -844,7 +845,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="Lowercased" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yQI-hM-UmN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="lowercaseString:" target="XfG-lQ-9wD" id="CKe-Mh-W0Q"/>
@@ -858,7 +859,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="UnicodeEnc" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="inA-GV-0DI">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="unicodeEncode:" target="XfG-lQ-9wD" id="kJI-he-yV1"/>
@@ -872,7 +873,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="UnicodeDec" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="b2g-Xg-9fe">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="unicodeDecode:" target="XfG-lQ-9wD" id="nNB-IT-owS"/>
@@ -886,7 +887,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="HexEncode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VZs-Ml-DGD">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="hexEncode:" target="XfG-lQ-9wD" id="SQo-BW-IaK"/>
@@ -900,7 +901,7 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="HexDecode" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M1S-0Z-v9O">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="hexDecode:" target="XfG-lQ-9wD" id="c4P-Db-qR7"/>

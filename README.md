@@ -15,7 +15,7 @@ Konverter can help you quickly convert URL encode(decode), uppercase and lowerca
 
 v2.0
 
-![](https://github.com/paradiseduo/URL/blob/master/img/version.jpg)
+![](https://github.com/paradiseduo/URL/blob/master/img/version.png)
 
 
 
@@ -36,4 +36,4 @@ rm -rf ~/Library/Caches/MacOS.Konverter
 ## Screenshots
 
 ### MainView
-![](https://github.com/paradiseduo/Konverter/blob/master/img/main.jpg)
+![](https://github.com/paradiseduo/Konverter/blob/master/img/main.png)
