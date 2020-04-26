@@ -1,7 +1,7 @@
 <h1 align="center">
   <img src="https://github.com/paradiseduo/Konverter/blob/master/img/icon.png" alt="Konverter" width="256">
   <br>
-  URL
+  Konverter
   <br>
 </h1>
 
@@ -13,7 +13,7 @@ Konverter can help you quickly convert URL encode(decode), uppercase and lowerca
 
 ## Version:
 
-v1.0
+v2.0
 
 ![](https://github.com/paradiseduo/URL/blob/master/img/version.jpg)
 
