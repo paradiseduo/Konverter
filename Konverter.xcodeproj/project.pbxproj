@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE8BCBDC245EA4B800E0C997 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8BCBDA245EA4B700E0C997 /* Utils.m */; };
 		E894D7A8212BBE9000ABF77E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894D7A7212BBE9000ABF77E /* AppDelegate.swift */; };
 		E894D7AA212BBE9000ABF77E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894D7A9212BBE9000ABF77E /* ViewController.swift */; };
 		E894D7AC212BBE9200ABF77E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E894D7AB212BBE9200ABF77E /* Assets.xcassets */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE8BCBDA245EA4B700E0C997 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		BE8BCBDB245EA4B800E0C997 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		E894D7A4212BBE9000ABF77E /* Konverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E894D7A7212BBE9000ABF77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E894D7A9212BBE9000ABF77E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 			children = (
 				E894D7A7212BBE9000ABF77E /* AppDelegate.swift */,
 				E894D7A9212BBE9000ABF77E /* ViewController.swift */,
+				BE8BCBDB245EA4B800E0C997 /* Utils.h */,
+				BE8BCBDA245EA4B700E0C997 /* Utils.m */,
 				E894D7AB212BBE9200ABF77E /* Assets.xcassets */,
 				E894D7AD212BBE9200ABF77E /* Main.storyboard */,
 				E894D7B0212BBE9200ABF77E /* Info.plist */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8BCBDC245EA4B800E0C997 /* Utils.m in Sources */,
 				E894D7AA212BBE9000ABF77E /* ViewController.swift in Sources */,
 				E894D7A8212BBE9000ABF77E /* AppDelegate.swift in Sources */,
 			);
@@ -303,7 +309,7 @@
 					"$(PROJECT_DIR)/Konverter",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Konverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Konverter/Konverter-Bridging-Header.h";
@@ -333,7 +339,7 @@
 					"$(PROJECT_DIR)/Konverter",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = MacOS.Konverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Konverter/Konverter-Bridging-Header.h";

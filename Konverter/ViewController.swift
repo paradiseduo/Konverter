@@ -11,8 +11,7 @@ import Cocoa
 class ViewController: NSViewController {
 
     @IBOutlet var textView: NSTextView!
-    @IBOutlet weak var urldecode: NSButton!
-    @IBOutlet weak var urlencode: NSButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -76,12 +75,65 @@ class ViewController: NSViewController {
         }
     }
     
+    @IBAction func decodeSSR(_ sender: NSButton) {
+        let urls = self.getSSRURLsFromRes(resString: self.textView.string)
+        self.textView.string = ""
+        for item in urls {
+            if let s = ParseDecodeString(URL(string: item)) {
+                self.textView.string += "\(s)\n"
+            }
+        }
+    }
+    
+    @IBAction func encodeSSR(_ sender: NSButton) {
+        if self.textView.string.contains("ssr://") {
+            var urls = self.textView.string.components(separatedBy: "\n")
+            urls = urls.filter{ $0 != "" }.map{ String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
+            self.textView.string = ""
+            for item in urls {
+                if let d = ParseEncodeString(item) {
+                    self.textView.string += "\(d)\n"
+                }
+            }
+        } else if self.textView.string.contains("ss://") {
+            var urls = self.textView.string.components(separatedBy: "ss://")
+            urls = urls.filter{ $0 != "" }.map{ String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
+            
+        }
+    }
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
     }
 
+}
+
+extension ViewController {
+    private func getSSRURLsFromRes(resString: String) -> [String] {
+        let ssrregexp = "ssr://([A-Za-z0-9_-]+)"
+        if let decodeRes = decode64(resString), decodeRes.count > 0 {
+            let urls = splitor(url: decodeRes, regexp: ssrregexp)
+            return urls
+        } else {
+            let urls = splitor(url: resString, regexp: ssrregexp)
+            return urls
+        }
+    }
+    
+    private func splitor(url: String, regexp: String) -> [String] {
+        var ret: [String] = []
+        var ssrUrl = url
+        while ssrUrl.range(of:regexp, options: .regularExpression) != nil {
+            if let range = ssrUrl.range(of:regexp, options: .regularExpression) {
+                let result = String(ssrUrl[range])
+                ssrUrl.replaceSubrange(range, with: "")
+                ret.append(result)
+            }
+        }
+        return ret
+    }
 }
 
 extension String {

@@ -907,9 +907,38 @@
                                     <action selector="hexDecode:" target="XfG-lQ-9wD" id="c4P-Db-qR7"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="56C-AK-Dco">
+                                <rect key="frame" x="358" y="11" width="112" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Neu-CK-gVx"/>
+                                    <constraint firstAttribute="height" constant="21" id="t6M-lp-qKO"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="DecodeSSR" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jKU-sZ-fSh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="decodeSSR:" target="XfG-lQ-9wD" id="uqD-ZM-TS4"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZBQ-10-l3e">
+                                <rect key="frame" x="471" y="11" width="111" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="N6g-7p-yo9"/>
+                                    <constraint firstAttribute="width" constant="99" id="hnD-Wx-boc"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="EncodeSSR" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dJr-Dc-Qjh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="encodeSSR:" target="XfG-lQ-9wD" id="KJ5-5K-eXo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="dwQ-IV-WZF" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="252-Gg-cAE"/>
+                            <constraint firstAttribute="trailing" secondItem="ZBQ-10-l3e" secondAttribute="trailing" constant="20" id="2SQ-45-NCI"/>
                             <constraint firstItem="nKW-F5-HWq" firstAttribute="leading" secondItem="Qv8-3Y-wIy" secondAttribute="trailing" constant="12" id="2tN-eG-d99"/>
                             <constraint firstItem="qcp-LP-166" firstAttribute="centerY" secondItem="Sps-mX-5ag" secondAttribute="centerY" constant="37" id="389-ck-nZ7"/>
                             <constraint firstItem="Vi7-DK-R7C" firstAttribute="top" secondItem="2MD-5g-kPa" secondAttribute="bottom" constant="49" id="4Ld-E6-3tK"/>
@@ -923,6 +952,8 @@
                             <constraint firstItem="RA6-j5-2B7" firstAttribute="top" secondItem="dwQ-IV-WZF" secondAttribute="bottom" constant="20" id="NAq-Op-cbn"/>
                             <constraint firstItem="Ev5-fL-feC" firstAttribute="top" secondItem="dwQ-IV-WZF" secondAttribute="bottom" constant="20" id="ODc-kt-i3u"/>
                             <constraint firstItem="TjJ-zX-zJH" firstAttribute="top" secondItem="nKW-F5-HWq" secondAttribute="bottom" constant="14" id="OU6-yO-4KW"/>
+                            <constraint firstItem="56C-AK-Dco" firstAttribute="top" secondItem="cGN-Rc-JmE" secondAttribute="bottom" constant="18" id="QGq-5m-cZs"/>
+                            <constraint firstItem="ZBQ-10-l3e" firstAttribute="leading" secondItem="56C-AK-Dco" secondAttribute="trailing" constant="13" id="QUy-b7-V20"/>
                             <constraint firstItem="Sps-mX-5ag" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="23" id="V1b-XS-1vp"/>
                             <constraint firstItem="aqM-X6-oJB" firstAttribute="top" secondItem="Vi7-DK-R7C" secondAttribute="bottom" constant="12" id="VUS-Qj-mpU"/>
                             <constraint firstItem="Qv8-3Y-wIy" firstAttribute="top" secondItem="RA6-j5-2B7" secondAttribute="bottom" constant="12" id="YA2-Rx-ciO"/>
@@ -937,12 +968,11 @@
                             <constraint firstItem="aqM-X6-oJB" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="23" id="qcy-A6-QAQ"/>
                             <constraint firstItem="cGN-Rc-JmE" firstAttribute="top" secondItem="Qv8-3Y-wIy" secondAttribute="bottom" constant="14" id="tti-kc-VEK"/>
                             <constraint firstItem="2MD-5g-kPa" firstAttribute="top" secondItem="dwQ-IV-WZF" secondAttribute="bottom" constant="20" id="xHv-tO-O7r"/>
+                            <constraint firstItem="ZBQ-10-l3e" firstAttribute="top" secondItem="TjJ-zX-zJH" secondAttribute="bottom" constant="18" id="yXg-R1-KxA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="textView" destination="TdF-4L-jGT" id="t6v-3h-luw"/>
-                        <outlet property="urldecode" destination="Sps-mX-5ag" id="V6e-Zj-qXH"/>
-                        <outlet property="urlencode" destination="2MD-5g-kPa" id="fax-If-X2F"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
