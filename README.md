@@ -13,7 +13,7 @@ Konverter can help you quickly convert URL encode(decode), uppercase and lowerca
 
 ## Version:
 
-v2.0
+v2.1
 
 ![](https://github.com/paradiseduo/URL/blob/master/img/version.png)
 
