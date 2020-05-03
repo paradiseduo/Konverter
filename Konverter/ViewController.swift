@@ -86,19 +86,13 @@ class ViewController: NSViewController {
     }
     
     @IBAction func encodeSSR(_ sender: NSButton) {
-        if self.textView.string.contains("ssr://") {
-            var urls = self.textView.string.components(separatedBy: "\n")
-            urls = urls.filter{ $0 != "" }.map{ String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
-            self.textView.string = ""
-            for item in urls {
-                if let d = ParseEncodeString(item) {
-                    self.textView.string += "\(d)\n"
-                }
+        var urls = self.textView.string.components(separatedBy: "\n")
+        urls = urls.filter{ $0 != "" }.map{ String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
+        self.textView.string = ""
+        for item in urls {
+            if let d = ParseEncodeString(item) {
+                self.textView.string += "\(d)\n"
             }
-        } else if self.textView.string.contains("ss://") {
-            var urls = self.textView.string.components(separatedBy: "ss://")
-            urls = urls.filter{ $0 != "" }.map{ String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
-            
         }
     }
     
