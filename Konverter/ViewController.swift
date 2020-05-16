@@ -96,6 +96,16 @@ class ViewController: NSViewController {
         }
     }
     
+    @IBAction func timeTranslate(_ sender: NSButton) {
+        if let t = TimeInterval(self.textView.string) {
+            self.textView.string = self.date2String(Date(timeIntervalSince1970: t))
+        } else {
+            if let d = self.string2Date(self.textView.string) {
+                self.textView.string = "\(d.timeIntervalSince1970)"
+            }
+        }
+    }
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
@@ -127,6 +137,21 @@ extension ViewController {
             }
         }
         return ret
+    }
+    
+    private func date2String(_ date:Date, dateFormat:String = "yyyy-MM-dd HH:mm:ss") -> String {
+        let formatter = DateFormatter()
+        formatter.locale = Locale.init(identifier: "zh_CN")
+        formatter.dateFormat = dateFormat
+        let date = formatter.string(from: date)
+        return date
+    }
+    
+    private func string2Date(_ string:String, dateFormat:String = "yyyy-MM-dd HH:mm:ss") -> Date? {
+        let formatter = DateFormatter()
+        formatter.locale = Locale.init(identifier: "zh_CN")
+        formatter.dateFormat = dateFormat
+        return formatter.date(from: string)
     }
 }
 
