@@ -5,7 +5,7 @@
   <br>
 </h1>
 
-Konverter can help you quickly convert URL encode(decode), uppercase and lowercase, md5, sha256, Base64 encode(decode), Unicode encode(decode), Hex encode(decode), SSR encode(decode), SS encode(decode) on macOS
+Konverter can help you quickly convert URL encode(decode), uppercase and lowercase, md5, sha256, Base64 encode(decode), Unicode encode(decode), Hex encode(decode), SSR encode(decode), SS encode(decode), HTML encode(decode) on macOS
 
 [![Swift](https://img.shields.io/badge/swift-5.2-orange.svg)](https://swift.org/)
 [![platform](https://img.shields.io/badge/platform-macOS-green.svg)](https://github.com/MobSF/Mobile-Security-Framework-MobSF/)
@@ -13,7 +13,7 @@ Konverter can help you quickly convert URL encode(decode), uppercase and lowerca
 
 ## Version:
 
-v2.1
+v2.2
 
 ![](https://github.com/paradiseduo/URL/blob/master/img/version.png)
 
