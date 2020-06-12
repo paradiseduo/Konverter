@@ -23,7 +23,8 @@ class ViewController: NSViewController {
     }
     
     @IBAction func encode(_ sender: Any) {
-        if let text = self.textView.string.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
+        let customAllowedSet = NSCharacterSet(charactersIn:"=\"#%/<>?@\\^`{|}&;:,.").inverted
+        if let text = self.textView.string.addingPercentEncoding(withAllowedCharacters: customAllowedSet) {
             self.textView.string = text
         }
     }
@@ -106,6 +107,14 @@ class ViewController: NSViewController {
         }
     }
     
+    @IBAction func htmlEncodeTap(_ sender: NSButton) {
+        self.textView.string = self.textView.string.htmlEncode()
+    }
+    
+    @IBAction func htmlDecodeTap(_ sender: NSButton) {
+        self.textView.string = self.textView.string.htmlDecode()
+    }
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
@@ -156,6 +165,34 @@ extension ViewController {
 }
 
 extension String {
+    
+    func htmlEncode() -> String {
+        var finalString = ""
+        for char in self {
+            for scalar in String(char).unicodeScalars {
+//                finalString.append("&#x\(String(format: "%0x", scalar.value));")
+                finalString.append("&#\(scalar.value);")
+            }
+        }
+        return finalString
+    }
+    
+    func htmlDecode() -> String{
+        guard let data = self.data(using: .utf8) else {
+            return self
+        }
+
+        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+            .documentType: NSAttributedString.DocumentType.html,
+            .characterEncoding: String.Encoding.utf8.rawValue
+        ]
+
+        guard let attributedString = try? NSAttributedString(data: data, options: options, documentAttributes: nil) else {
+            return self
+        }
+        
+        return attributedString.string
+    }
     
     func unicodeDecodedString()-> String {
         let data = self.data(using: .utf8)
